@@ -3,10 +3,12 @@ black==24.8.0
 click==8.1.7
 colorama==0.4.6
 Django==5.1
+Markdown==3.7
 mypy-extensions==1.0.0
 mysqlclient==2.2.4
 packaging==24.1
 pathspec==0.12.1
+Pillow==10.0.0
 platformdirs==4.2.2
 python-decouple==3.8
 sqlparse==0.5.1
