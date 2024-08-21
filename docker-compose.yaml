@@ -1,4 +1,12 @@
 services:
+  django_blog:
+    container_name: django_blog
+    image: jcivitell/django_blog
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      tags:
+      - "jcivitell/django_blog:${CIRCLE_TAG:-notag}"
   django_blog_mariadb:
     container_name: django_blog_mariadb
     image: mariadb:latest
