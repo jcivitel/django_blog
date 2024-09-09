@@ -14,6 +14,15 @@ class BlogSettings(models.Model):
         return self.title
 
 
+class BlogContent(models.Model):
+    blog_id = models.ForeignKey(BlogSettings, on_delete=models.CASCADE)
+    name = models.CharField(max_length=100)
+    value = models.TextField()
+
+    def __str__(self):
+        return self.name
+
+
 class BlogPost(models.Model):
     title = models.CharField(max_length=100)
     description = models.TextField()

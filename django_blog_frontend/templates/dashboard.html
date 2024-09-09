@@ -7,13 +7,15 @@
         </div>
     </div>
     {% if latest_post %}
-        <div class="card">
+        <a href="{% url "post" latest_post.id %}">
             <div class="card">
-                <div class="card-header">{{ latest_post.title }}</div>
-                <div class="card-body">
-                    {{ latest_post.content|safe }}
+                <div class="card">
+                    <div class="card-header">{{ latest_post.title }}</div>
+                    <div class="card-body">
+                        {{ latest_post.content|safe }}
+                    </div>
                 </div>
             </div>
-        </div>
+        </a>
     {% endif %}
 {% endblock %}
