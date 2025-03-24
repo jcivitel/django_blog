@@ -9,7 +9,7 @@ mysqlclient==2.2.7
 packaging==24.2
 pathspec==0.12.1
 Pillow==11.1.0
-platformdirs==4.3.6
+platformdirs==4.3.7
 python-decouple==3.8
 sqlparse==0.5.3
 tzdata==2025.1
