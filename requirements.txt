@@ -6,7 +6,7 @@ Django==6.0.1
 Markdown==3.10
 mypy-extensions==1.1.0
 mysqlclient==2.2.7
-packaging==25.0
+packaging==26.0
 pathspec==1.0.3
 Pillow==12.1.0
 platformdirs==4.5.1
